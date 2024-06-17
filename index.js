@@ -138,7 +138,7 @@ app.delete("/books/:bookId/", async (request, response) => {
   response.send("Book deleted successfully");
 });
 //get book by authorid API
-app.get("/authors/:authorID/books/", async (request, response) => {
+app.get("/authors/:authorId/books/", async (request, response) => {
   const { authorId } = request.params;
   const getAuthorBooksQuery = `
     SELECT
